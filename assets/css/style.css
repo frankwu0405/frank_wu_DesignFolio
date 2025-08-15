@@ -117,7 +117,7 @@ body {
 
 .intro p {
     font-size: clamp(1rem, 1.5vw, 1.25rem);
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto 30px;
     line-height: 1.6;
 }
@@ -321,7 +321,7 @@ body {
 .contact-section {
     padding: 80px 20px;
     text-align: center;
-    background: #f8f9fa;
+    background: #ffffff;
 }
 
 .contact-section h2 {
@@ -337,7 +337,8 @@ body {
 
 .contact-info {
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
+    justify-content: center;
     align-items: center;
     gap: 20px;
 }
