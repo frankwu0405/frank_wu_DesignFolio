@@ -409,7 +409,7 @@ body {
 .carousel-container {
     position: relative;
     max-width: 1000px;
-    margin: 40px auto;
+    margin: auto;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
