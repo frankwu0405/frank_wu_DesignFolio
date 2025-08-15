@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="navbar">
-    <div class="logo">Frank Wu</div>
+    <a href="index.html" class="logo">Frank Wu</a>
     
     <!-- Hidden checkbox to control the menu state -->
     <input type="checkbox" id="menu-toggle" class="hidden-checkbox" aria-label="Toggle navigation menu">
@@ -86,7 +86,8 @@
     <!-- About Section -->
     <section id="about" class="about">
       <div class="about-image">
-        <div class="circle"></div>
+        <!-- Replaced the old div with the new class -->
+        <div class="profile-image"></div>
       </div>
       <div class="about-content">
         <h2>About Me</h2>
@@ -97,8 +98,21 @@
           driven by user research and feedback.
         </p>
         <h3>My Skills</h3>
-        <p>UI/UX Design • Prototyping • User Research • Wireframing • Figma • Design Systems • Responsive Design • Branding</p>
-        <a href="#" class="btn download">Download Resume</a>
+        <!-- Updated the skills to use the new skills-list and skill-tag classes -->
+        <div class="skills-list">
+            <span class="skill-tag">UI/UX Design</span>
+            <span class="skill-tag">Prototyping</span>
+            <span class="skill-tag">User Research</span>
+            <span class="skill-tag">Wireframing</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Design Systems</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">Branding</span>
+        </div>
+        <a href="#" class="btn download">
+            <i class="fa-solid fa-download"></i>
+            Download Resume
+        </a>
       </div>
     </section>
 
