@@ -11,12 +11,15 @@
   <header class="navbar">
     <div class="logo">Frank Wu</div>
     
-    <!-- Hamburger menu toggle button -->
-    <button class="nav-toggle" aria-label="toggle navigation">
+    <!-- Hidden checkbox to control the menu state -->
+    <input type="checkbox" id="menu-toggle" class="hidden-checkbox" aria-label="Toggle navigation menu">
+    
+    <!-- Label element that acts as the clickable hamburger icon -->
+    <label for="menu-toggle" class="nav-toggle">
       <span class="hamburger"></span>
       <span class="hamburger"></span>
       <span class="hamburger"></span>
-    </button>
+    </label>
     
     <ul class="nav-links">
       <li><a href="#projects">Projects</a></li>
@@ -115,8 +118,5 @@
       </div>
     </section>
   </main>
-  
-  <!-- Link to the JavaScript file for the hamburger menu -->
-  <script src="script.js"></script>
 </body>
 </html>
