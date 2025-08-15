@@ -5,48 +5,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Frank Wu | UX Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="navbar">
+    <div class="logo">Frank Wu</div>
+    
+    <!-- Hamburger menu toggle button -->
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+    </button>
+    
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </header>
+
   <main>
+    <!-- Hero Section -->
     <section class="intro">
-      <div class="hero">
-      <h1>I'm Frank Wu, a UI/UX designer.</h1>
-      <p>A UI/UX Designer passionate about user research and thoughtful design.</p>
-      <p>Hi, I’m Frank – a UX designer passionate about research and building user-centered experiences. Here are some of my featured projects:</p>
+      <h1>
+        Hi, I’m Frank Wu. I Design <br>
+        <span class="highlight">Human-Centered Digital Experiences</span>
+      </h1>
+      <p>
+        I'm a passionate UI/UX designer focused on bridging the gap between people and technology through intuitive,
+        beautiful, and functional design. Let’s create something amazing together.
+      </p>
+      <div class="intro-buttons">
+        <a href="#projects" class="btn primary">View My Work</a>
+        <a href="#contact" class="btn secondary">Get In Touch</a>
       </div>
     </section>
-    <section class="projects">
-      <div class="project-card">
-      <img src="assets/images/placeholder.jpg" alt="Project Image" class="project-image">
-        <h2>Smart Station – Interactive Trolley Return System</h2>
-        <p>Designed a public-facing gamified system to motivate better cart return habits using user research and feedback loops.</p>
-        <a href="project1.html">View Project</a>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <p class="section-description">Here are some of the projects I've worked on. Click to see the detailed case studies.</p>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="assets/images/placeholder.jpg" alt="Project Image" class="project-image">
+          <div class="project-card-content">
+            <span class="project-tag">EdTech Mobile App</span>
+            <h3>Interactive Learning Tools for Remote Students</h3>
+            <p>A digital STEM learning tool designed to engage students in rural and remote areas.</p>
+            <a href="project1.html" class="btn">View Case Study</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/images/placeholder.jpg" alt="Project Image" class="project-image">
+          <div class="project-card-content">
+            <span class="project-tag">Interaction Design</span>
+            <h3>Smart Station – Interactive Trolley Return System</h3>
+            <p>A multi-sensory system to encourage trolley returns through gamification and clear user feedback.</p>
+            <a href="project2.html" class="btn">View Case Study</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/images/one_shop_card_image.jpg" alt="Project Image" class="project-image">
+          <div class="project-card-content">
+            <span class="project-tag">E-Commerce Mobile App</span>
+            <h3>AI-Driven Fashion Shopping App</h3>
+            <p>A mobile shopping app with AI integration to help users make confident purchasing decisions.</p>
+            <a href="project3.html" class="btn">View Case Study</a>
+          </div>
+        </div>
       </div>
-      <div class="project-card">
-      <img src="assets/images/placeholder.jpg" alt="Project Image" class="project-image">
-        <h2>Online Fashion Shopping with AI</h2>
-        <p>Created a shopping interface with AI-matching logic to reduce decision fatigue and enhance user satisfaction.</p>
-        <a href="project2.html">View Project</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="about-image">
+        <div class="circle"></div>
       </div>
-      <div class="project-card">
-      <img src="assets/images/placeholder.jpg" alt="Project Image" class="project-image">
-        <h2>STEM Learning for Remote Students</h2>
-        <p>Developed a gamified educational tool to boost engagement among students in underserved areas.</p>
-        <a href="project3.html">View Project</a>
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          I'm a junior UI/UX designer with a strong passion for solving complex problems through thoughtful and engaging design.
+          My journey into design began with fascination for how people interact with technology, and it has evolved into a career
+          dedicated to making those interactions seamless and enjoyable. I believe in a collaborative and iterative design process,
+          driven by user research and feedback.
+        </p>
+        <h3>My Skills</h3>
+        <p>UI/UX Design • Prototyping • User Research • Wireframing • Figma • Design Systems • Responsive Design • Branding</p>
+        <a href="#" class="btn download">Download Resume</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Get In Touch</h2>
+      <p class="contact-description">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+      <div class="contact-info">
+        <a href="tel:+886956820832" class="contact-link">
+          <i class="fas fa-phone"></i>
+          <span>+886 956 820832</span>
+        </a>
+        <a href="mailto:frank.wu.0405@gmail.com" class="contact-link">
+          <i class="fas fa-envelope"></i>
+          <span>frank.wu.0405@gmail.com</span>
+        </a>
       </div>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2025 Frank Wu</p>
-  </footer>
+  
+  <!-- Link to the JavaScript file for the hamburger menu -->
+  <script src="script.js"></script>
 </body>
 </html>
